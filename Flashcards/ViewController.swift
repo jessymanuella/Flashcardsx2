@@ -19,8 +19,19 @@ class ViewController: UIViewController {
     }
 
 
-    @IBAction func didTapOnFlashcard(_ sender: Any) {
+    @IBAction func didTapOnFlashcards(_ sender: Any) {
+        if(frontLabel.isHidden){
+            frontLabel.isHidden = false
+            backLabel.isHidden = true
+        }
+        else{ //what to do when the front label is already hidden?
+            frontLabel.isHidden = true
+            backLabel.isHidden = false
+        }
         
     }
-}
+    
+        
+    }
+
 
